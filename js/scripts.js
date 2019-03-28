@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $("form#submit_info").submit(function(event) {
     event.preventDefault();
-    var side1 = parseInt($("input#side1").val());
-    var side2 = parseInt($("input#side2").val());
-    var side3 = parseInt($("input#side3").val());
+    var side1 = parseFloat($("input#side1").val());
+    var side2 = parseFloat($("input#side2").val());
+    var side3 = parseFloat($("input#side3").val());
     // if (age) {
       if (side1 === side2 && side2 === side3 && side3 === side1) {
         $('#notTriangle').hide();
